@@ -1,0 +1,40 @@
+{
+  "majorVersion" : 1,
+  "minorVersion" : 0,
+  "flowEntryName" : "flow",
+  "displaySettingsEntryName" : "displaySettings",
+  "isPackagedMaestroDocument" : false,
+  "documentFeaturesUsedInDocument" : [ {
+    "id" : "document.v2018_3_1.Flow",
+    "featureName" : "",
+    "firstSoftwareVersionSupportedIn" : {
+      "year" : 2018,
+      "quarterOfYear" : 3,
+      "versionString" : "2018.3.1",
+      "indexOfRelease" : 1
+    },
+    "notSupportedMessages" : [ "it_IT::Operazioni di pulizia su join, unificazione, pivot o aggregazione (supportato nelle versioni 2018.3.1 e successive)", "fr_CA::Actions de nettoyage sur jointure, union, tableau croisé dynamique ou agrégation (pris en charge dans la version 2018.3.1 et versions ultérieures)", "sv_SE::Rensningsåtgärder i Koppla, Förena, Pivotera eller Aggregera (stöds i version 2018.3.1 och senare)", "pt_BR::Limpeza de ações em União de colunas, União de linhas, Dinamizar ou Agregar (suportado na versão 2018.3.1 e posteriores)", "th_TH::การดำเนินการล้างในการรวม ผนวก ทำการ Pivot หรือรวบรวม (รองรับในเวอร์ชัน 2018.3.1 และใหม่กว่า)", "fr_FR::Actions de nettoyage sur jointure, union, permutation ou agrégation (pris en charge dans la version 2018.3.1 et versions ultérieures)", "ja_JP::結合、ユニオン、ピボット、または集計でのアクションを作成する (バージョン 2018.3.1 以降でサポートされています)", "de_DE::Aufbereitungsaktionen für Verknüpfen, Vereinigen, Pivotieren oder Aggregieren (unterstützt in Version 2018.3.1 und höher)", "en_GB::Cleaning Actions on Join, Union, Pivot or Aggregate (supported in version 2018.3.1 and later)", "zh_TW::針對聯結、聯集、樞紐或彙總的清除操作 (版本 2018.3.1 及更高版本中支援)", "ko_KR::조인, 유니온, 피벗 또는 집계 관련 작업을 정리하는 중(버전 2018.3.1 이상에서 지원됨)", "en_US::Cleaning Actions on Join, Union, Pivot or Aggregate (supported in version 2018.3.1 and later)", "ga_IE::33c5-表:1f53-表:Cleaning Actions on Join, Union, Pivot or Aggregate|桜 (supported in version 2018.3.1 and later)|桜", "es_ES::Acciones de limpieza en Unión de columnas, Unión de filas, Tabla dinámica o Agregado (admitido en la versión 2018.3.1 y posteriores)", "zh_CN::针对联接、合并、转置或聚合的清理操作 (版本 2018.3.1 及更高版本中支持)" ],
+    "minimumCompatibleSoftwareVersion" : {
+      "year" : 2018,
+      "quarterOfYear" : 3,
+      "versionString" : "2018.3.1",
+      "indexOfRelease" : 1
+    }
+  }, {
+    "id" : "node.v2018_2_3.SuperJoin",
+    "featureName" : "",
+    "firstSoftwareVersionSupportedIn" : {
+      "year" : 2018,
+      "quarterOfYear" : 2,
+      "versionString" : "2018.2.3",
+      "indexOfRelease" : 3
+    },
+    "notSupportedMessages" : [ "it_IT::Azioni in join (supportato nelle versioni 2018.2.3 e successive)", "fr_CA::Actions dans la jointure (pris en charge dans la version 2018.2.3 et versions ultérieures)", "sv_SE::Åtgärder i Koppla (stöds i version 2018.2.3 och senare)", "pt_BR::Ações ao unir colunas (suportado na versão 2018.2.3 e posteriores)", "th_TH::การดำเนินการในการรวม (รองรับในเวอร์ชัน 2018.2.3 และใหม่กว่า)", "fr_FR::Actions dans la jointure (pris en charge dans la version 2018.2.3 et versions ultérieures)", "ja_JP::結合内のアクション (バージョン 2018.2.3 以降でサポートされています)", "de_DE::Aktionen in Verknüpfen (unterstützt in Version 2018.2.3 und höher)", "en_GB::Actions in Join (supported in version 2018.2.3 and later)", "zh_TW::聯結中的操作 (版本 2018.2.3 及更高版本中支援)", "ko_KR::조인 작업 수(버전 2018.2.3 이상에서 지원됨)", "en_US::Actions in Join (supported in version 2018.2.3 and later)", "ga_IE::33c5-表:501f-表:Actions in Join|桜 (supported in version 2018.2.3 and later)|桜", "es_ES::Acciones en unión de columnas (admitido en la versión 2018.2.3 y posteriores)", "zh_CN::联接中的操作 (版本 2018.2.3 及更高版本中支持)" ],
+    "minimumCompatibleSoftwareVersion" : {
+      "year" : 2018,
+      "quarterOfYear" : 2,
+      "versionString" : "2018.2.3",
+      "indexOfRelease" : 3
+    }
+  } ]
+}

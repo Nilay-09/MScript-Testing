@@ -1,0 +1,734 @@
+{
+  "parameters" : {
+    "parameters" : { }
+  },
+  "initialNodes" : [ "8fe429e1-bbbd-4114-a178-62802aa1f5d1", "3d4e269a-3840-4d83-b07c-d9c7f944d422", "8363f39f-4bb2-4106-a84d-68395160e494", "a60b5fe7-aefa-4644-be60-0e569743877d", "d78fb081-2a58-4a32-97e8-d48505c4524c" ],
+  "nodes" : {
+    "8fe429e1-bbbd-4114-a178-62802aa1f5d1" : {
+      "nodeType" : ".v1.LoadExcel",
+      "name" : "Customer_data",
+      "id" : "8fe429e1-bbbd-4114-a178-62802aa1f5d1",
+      "baseType" : "input",
+      "nextNodes" : [ {
+        "namespace" : "Default",
+        "nextNodeId" : "9c3b6d4a-6fa6-4e5c-8c40-31011ebf9d22",
+        "nextNamespace" : "Default"
+      } ],
+      "serialize" : false,
+      "description" : null,
+      "connectionId" : "475fd40e-de44-45c9-b80a-2ef75b1bc543",
+      "connectionAttributes" : { },
+      "fields" : [ {
+        "name" : "CustomerKey",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 0,
+        "isGenerated" : false
+      }, {
+        "name" : "Customer ID",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 1,
+        "isGenerated" : false
+      }, {
+        "name" : "Customer",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 2,
+        "isGenerated" : false
+      }, {
+        "name" : "City",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 3,
+        "isGenerated" : false
+      }, {
+        "name" : "State-Province",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 4,
+        "isGenerated" : false
+      }, {
+        "name" : "Country-Region",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 5,
+        "isGenerated" : false
+      }, {
+        "name" : "Postal Code",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 6,
+        "isGenerated" : false
+      } ],
+      "actions" : [ ],
+      "debugModeRowLimit" : 393216,
+      "originalDataTypes" : { },
+      "randomSampling" : null,
+      "updateTimestamp" : 1743221840281,
+      "restrictedFields" : { },
+      "userRenamedFields" : { },
+      "selectedFields" : null,
+      "samplingType" : null,
+      "groupByFields" : null,
+      "filters" : [ ],
+      "relation" : {
+        "type" : "table",
+        "table" : "[Customer_data$]"
+      }
+    },
+    "e48b125e-ff28-4134-a71f-9ba7a0028cc2" : {
+      "nodeType" : ".v2018_2_3.SuperJoin",
+      "name" : "Join 1",
+      "id" : "e48b125e-ff28-4134-a71f-9ba7a0028cc2",
+      "baseType" : "superNode",
+      "nextNodes" : [ {
+        "namespace" : "Default",
+        "nextNodeId" : "457ef826-e82f-4fb0-b6f6-b101e978a0b8",
+        "nextNamespace" : "Left"
+      } ],
+      "serialize" : false,
+      "description" : null,
+      "beforeActionAnnotations" : [ ],
+      "afterActionAnnotations" : [ ],
+      "actionNode" : {
+        "nodeType" : ".v1.SimpleJoin",
+        "name" : "Join 1",
+        "id" : "70a20d55-24cb-4dac-88e0-d82a0709fcbd",
+        "baseType" : "transform",
+        "nextNodes" : [ ],
+        "serialize" : false,
+        "description" : null,
+        "conditions" : [ {
+          "leftExpression" : "[SalesTerritoryKey]",
+          "rightExpression" : "[SalesTerritoryKey]",
+          "comparator" : "=="
+        } ],
+        "joinType" : "inner"
+      }
+    },
+    "c85aa31a-0510-402d-91bd-aabf360bf30f" : {
+      "nodeType" : ".v1.Container",
+      "name" : "Clean 4",
+      "id" : "c85aa31a-0510-402d-91bd-aabf360bf30f",
+      "baseType" : "container",
+      "nextNodes" : [ {
+        "namespace" : "Default",
+        "nextNodeId" : "e48b125e-ff28-4134-a71f-9ba7a0028cc2",
+        "nextNamespace" : "Left"
+      } ],
+      "serialize" : false,
+      "description" : null,
+      "loomContainer" : {
+        "parameters" : {
+          "parameters" : { }
+        },
+        "initialNodes" : [ ],
+        "nodes" : { },
+        "connections" : { },
+        "dataConnections" : { },
+        "connectionIds" : [ ],
+        "dataConnectionIds" : [ ],
+        "nodeProperties" : { },
+        "extensibility" : null
+      },
+      "namespacesToInput" : { },
+      "namespacesToOutput" : { },
+      "providedParameters" : null
+    },
+    "875b14e1-bcc1-48c7-9073-56baa342fdad" : {
+      "nodeType" : ".v1.WriteToHyper",
+      "name" : "Output",
+      "id" : "875b14e1-bcc1-48c7-9073-56baa342fdad",
+      "baseType" : "output",
+      "nextNodes" : [ ],
+      "serialize" : false,
+      "description" : null,
+      "hyperOutputFile" : "C:\\Users\\dell\\Documents\\My Tableau Prep Repository\\Datasources\\Output.hyper",
+      "tdsOutput" : "C:\\Users\\dell\\Documents\\My Tableau Prep Repository\\Datasources\\Output.tds"
+    },
+    "9fe94855-9e0d-4232-afac-4e1a9df900af" : {
+      "nodeType" : ".v1.Container",
+      "name" : "Clean 1",
+      "id" : "9fe94855-9e0d-4232-afac-4e1a9df900af",
+      "baseType" : "container",
+      "nextNodes" : [ {
+        "namespace" : "Default",
+        "nextNodeId" : "e48b125e-ff28-4134-a71f-9ba7a0028cc2",
+        "nextNamespace" : "Right"
+      } ],
+      "serialize" : false,
+      "description" : null,
+      "loomContainer" : {
+        "parameters" : {
+          "parameters" : { }
+        },
+        "initialNodes" : [ ],
+        "nodes" : { },
+        "connections" : { },
+        "dataConnections" : { },
+        "connectionIds" : [ ],
+        "dataConnectionIds" : [ ],
+        "nodeProperties" : { },
+        "extensibility" : null
+      },
+      "namespacesToInput" : { },
+      "namespacesToOutput" : { },
+      "providedParameters" : null
+    },
+    "9c3b6d4a-6fa6-4e5c-8c40-31011ebf9d22" : {
+      "nodeType" : ".v1.Container",
+      "name" : "Clean 3",
+      "id" : "9c3b6d4a-6fa6-4e5c-8c40-31011ebf9d22",
+      "baseType" : "container",
+      "nextNodes" : [ {
+        "namespace" : "Default",
+        "nextNodeId" : "a5f9dd71-a007-4129-92a0-abc54278c74c",
+        "nextNamespace" : "Default"
+      } ],
+      "serialize" : false,
+      "description" : null,
+      "loomContainer" : {
+        "parameters" : {
+          "parameters" : { }
+        },
+        "initialNodes" : [ ],
+        "nodes" : { },
+        "connections" : { },
+        "dataConnections" : { },
+        "connectionIds" : [ ],
+        "dataConnectionIds" : [ ],
+        "nodeProperties" : { },
+        "extensibility" : null
+      },
+      "namespacesToInput" : { },
+      "namespacesToOutput" : { },
+      "providedParameters" : null
+    },
+    "a5f9dd71-a007-4129-92a0-abc54278c74c" : {
+      "nodeType" : ".v1.WriteToHyper",
+      "name" : "Output 2",
+      "id" : "a5f9dd71-a007-4129-92a0-abc54278c74c",
+      "baseType" : "output",
+      "nextNodes" : [ ],
+      "serialize" : false,
+      "description" : null,
+      "hyperOutputFile" : "C:\\Users\\dell\\Documents\\My Tableau Prep Repository\\Datasources\\Output 2.hyper",
+      "tdsOutput" : "C:\\Users\\dell\\Documents\\My Tableau Prep Repository\\Datasources\\Output 2.tds"
+    },
+    "457ef826-e82f-4fb0-b6f6-b101e978a0b8" : {
+      "nodeType" : ".v2018_2_3.SuperJoin",
+      "name" : "Join 3",
+      "id" : "457ef826-e82f-4fb0-b6f6-b101e978a0b8",
+      "baseType" : "superNode",
+      "nextNodes" : [ {
+        "namespace" : "Default",
+        "nextNodeId" : "6e893db9-8262-4e58-aa02-5d87a92b6991",
+        "nextNamespace" : "Default"
+      } ],
+      "serialize" : false,
+      "description" : null,
+      "beforeActionAnnotations" : [ ],
+      "afterActionAnnotations" : [ ],
+      "actionNode" : {
+        "nodeType" : ".v1.SimpleJoin",
+        "name" : "Join 3",
+        "id" : "b89fa387-3922-4f34-a761-871f9c587296",
+        "baseType" : "transform",
+        "nextNodes" : [ ],
+        "serialize" : false,
+        "description" : null,
+        "conditions" : [ {
+          "leftExpression" : "[SalesOrderLineKey]",
+          "rightExpression" : "[SalesOrderLineKey]",
+          "comparator" : "=="
+        } ],
+        "joinType" : "inner"
+      }
+    },
+    "3d4e269a-3840-4d83-b07c-d9c7f944d422" : {
+      "nodeType" : ".v1.LoadExcel",
+      "name" : "Date_data",
+      "id" : "3d4e269a-3840-4d83-b07c-d9c7f944d422",
+      "baseType" : "input",
+      "nextNodes" : [ {
+        "namespace" : "Default",
+        "nextNodeId" : "d65615dd-af5e-4a37-9260-93fd48281ea0",
+        "nextNamespace" : "Default"
+      } ],
+      "serialize" : false,
+      "description" : null,
+      "connectionId" : "475fd40e-de44-45c9-b80a-2ef75b1bc543",
+      "connectionAttributes" : { },
+      "fields" : [ {
+        "name" : "DateKey",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 0,
+        "isGenerated" : false
+      }, {
+        "name" : "Date",
+        "type" : "date",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 1,
+        "isGenerated" : false
+      }, {
+        "name" : "Fiscal Year",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 2,
+        "isGenerated" : false
+      }, {
+        "name" : "Fiscal Quarter",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 3,
+        "isGenerated" : false
+      }, {
+        "name" : "Month",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 4,
+        "isGenerated" : false
+      }, {
+        "name" : "Full Date",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 5,
+        "isGenerated" : false
+      }, {
+        "name" : "MonthKey",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 6,
+        "isGenerated" : false
+      } ],
+      "actions" : [ ],
+      "debugModeRowLimit" : 393216,
+      "originalDataTypes" : { },
+      "randomSampling" : null,
+      "updateTimestamp" : 1743221840988,
+      "restrictedFields" : { },
+      "userRenamedFields" : { },
+      "selectedFields" : null,
+      "samplingType" : null,
+      "groupByFields" : null,
+      "filters" : [ ],
+      "relation" : {
+        "type" : "table",
+        "table" : "[Date_data$]"
+      }
+    },
+    "b7626c3a-f9ce-4b7a-a898-327b063b7eb0" : {
+      "nodeType" : ".v1.WriteToHyper",
+      "name" : "Output 3",
+      "id" : "b7626c3a-f9ce-4b7a-a898-327b063b7eb0",
+      "baseType" : "output",
+      "nextNodes" : [ ],
+      "serialize" : false,
+      "description" : null,
+      "hyperOutputFile" : "C:\\Users\\dell\\Documents\\My Tableau Prep Repository\\Datasources\\Output 3.hyper",
+      "tdsOutput" : "C:\\Users\\dell\\Documents\\My Tableau Prep Repository\\Datasources\\Output 3.tds"
+    },
+    "aaf666c6-81aa-4491-a722-4bcfd245c726" : {
+      "nodeType" : ".v1.Container",
+      "name" : "Clean 5",
+      "id" : "aaf666c6-81aa-4491-a722-4bcfd245c726",
+      "baseType" : "container",
+      "nextNodes" : [ {
+        "namespace" : "Default",
+        "nextNodeId" : "457ef826-e82f-4fb0-b6f6-b101e978a0b8",
+        "nextNamespace" : "Right"
+      } ],
+      "serialize" : false,
+      "description" : null,
+      "loomContainer" : {
+        "parameters" : {
+          "parameters" : { }
+        },
+        "initialNodes" : [ ],
+        "nodes" : { },
+        "connections" : { },
+        "dataConnections" : { },
+        "connectionIds" : [ ],
+        "dataConnectionIds" : [ ],
+        "nodeProperties" : { },
+        "extensibility" : null
+      },
+      "namespacesToInput" : { },
+      "namespacesToOutput" : { },
+      "providedParameters" : null
+    },
+    "d65615dd-af5e-4a37-9260-93fd48281ea0" : {
+      "nodeType" : ".v1.Container",
+      "name" : "Clean 2",
+      "id" : "d65615dd-af5e-4a37-9260-93fd48281ea0",
+      "baseType" : "container",
+      "nextNodes" : [ {
+        "namespace" : "Default",
+        "nextNodeId" : "b7626c3a-f9ce-4b7a-a898-327b063b7eb0",
+        "nextNamespace" : "Default"
+      } ],
+      "serialize" : false,
+      "description" : null,
+      "loomContainer" : {
+        "parameters" : {
+          "parameters" : { }
+        },
+        "initialNodes" : [ ],
+        "nodes" : { },
+        "connections" : { },
+        "dataConnections" : { },
+        "connectionIds" : [ ],
+        "dataConnectionIds" : [ ],
+        "nodeProperties" : { },
+        "extensibility" : null
+      },
+      "namespacesToInput" : { },
+      "namespacesToOutput" : { },
+      "providedParameters" : null
+    },
+    "8363f39f-4bb2-4106-a84d-68395160e494" : {
+      "nodeType" : ".v1.LoadExcel",
+      "name" : "Sales Territory_data",
+      "id" : "8363f39f-4bb2-4106-a84d-68395160e494",
+      "baseType" : "input",
+      "nextNodes" : [ {
+        "namespace" : "Default",
+        "nextNodeId" : "c85aa31a-0510-402d-91bd-aabf360bf30f",
+        "nextNamespace" : "Default"
+      } ],
+      "serialize" : false,
+      "description" : null,
+      "connectionId" : "475fd40e-de44-45c9-b80a-2ef75b1bc543",
+      "connectionAttributes" : { },
+      "fields" : [ {
+        "name" : "SalesTerritoryKey",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 0,
+        "isGenerated" : false
+      }, {
+        "name" : "Region",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 1,
+        "isGenerated" : false
+      }, {
+        "name" : "Country",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 2,
+        "isGenerated" : false
+      }, {
+        "name" : "Group",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 3,
+        "isGenerated" : false
+      } ],
+      "actions" : [ ],
+      "debugModeRowLimit" : 393216,
+      "originalDataTypes" : { },
+      "randomSampling" : null,
+      "updateTimestamp" : 1743221841631,
+      "restrictedFields" : { },
+      "userRenamedFields" : { },
+      "selectedFields" : null,
+      "samplingType" : null,
+      "groupByFields" : null,
+      "filters" : [ ],
+      "relation" : {
+        "type" : "table",
+        "table" : "['Sales Territory_data$']"
+      }
+    },
+    "a60b5fe7-aefa-4644-be60-0e569743877d" : {
+      "nodeType" : ".v1.LoadExcel",
+      "name" : "Sales_data",
+      "id" : "a60b5fe7-aefa-4644-be60-0e569743877d",
+      "baseType" : "input",
+      "nextNodes" : [ {
+        "namespace" : "Default",
+        "nextNodeId" : "9fe94855-9e0d-4232-afac-4e1a9df900af",
+        "nextNamespace" : "Default"
+      } ],
+      "serialize" : false,
+      "description" : null,
+      "connectionId" : "475fd40e-de44-45c9-b80a-2ef75b1bc543",
+      "connectionAttributes" : { },
+      "fields" : [ {
+        "name" : "SalesOrderLineKey",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 0,
+        "isGenerated" : false
+      }, {
+        "name" : "ResellerKey",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 1,
+        "isGenerated" : false
+      }, {
+        "name" : "CustomerKey",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 2,
+        "isGenerated" : false
+      }, {
+        "name" : "ProductKey",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 3,
+        "isGenerated" : false
+      }, {
+        "name" : "OrderDateKey",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 4,
+        "isGenerated" : false
+      }, {
+        "name" : "DueDateKey",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 5,
+        "isGenerated" : false
+      }, {
+        "name" : "ShipDateKey",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 6,
+        "isGenerated" : false
+      }, {
+        "name" : "SalesTerritoryKey",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 7,
+        "isGenerated" : false
+      }, {
+        "name" : "Order Quantity",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 8,
+        "isGenerated" : false
+      }, {
+        "name" : "Unit Price",
+        "type" : "real",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 9,
+        "isGenerated" : false
+      }, {
+        "name" : "Extended Amount",
+        "type" : "real",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 10,
+        "isGenerated" : false
+      }, {
+        "name" : "Unit Price Discount Pct",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 11,
+        "isGenerated" : false
+      }, {
+        "name" : "Product Standard Cost",
+        "type" : "real",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 12,
+        "isGenerated" : false
+      }, {
+        "name" : "Total Product Cost",
+        "type" : "real",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 13,
+        "isGenerated" : false
+      }, {
+        "name" : "Sales Amount",
+        "type" : "real",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 14,
+        "isGenerated" : false
+      } ],
+      "actions" : [ ],
+      "debugModeRowLimit" : 393216,
+      "originalDataTypes" : { },
+      "randomSampling" : null,
+      "updateTimestamp" : 1743221842011,
+      "restrictedFields" : { },
+      "userRenamedFields" : { },
+      "selectedFields" : null,
+      "samplingType" : null,
+      "groupByFields" : null,
+      "filters" : [ ],
+      "relation" : {
+        "type" : "table",
+        "table" : "[Sales_data$]"
+      }
+    },
+    "6e893db9-8262-4e58-aa02-5d87a92b6991" : {
+      "nodeType" : ".v1.Container",
+      "name" : "Clean 6",
+      "id" : "6e893db9-8262-4e58-aa02-5d87a92b6991",
+      "baseType" : "container",
+      "nextNodes" : [ {
+        "namespace" : "Default",
+        "nextNodeId" : "875b14e1-bcc1-48c7-9073-56baa342fdad",
+        "nextNamespace" : "Default"
+      } ],
+      "serialize" : false,
+      "description" : null,
+      "loomContainer" : {
+        "parameters" : {
+          "parameters" : { }
+        },
+        "initialNodes" : [ "75821e76-3944-4ff0-98de-61313aaf2891" ],
+        "nodes" : {
+          "75821e76-3944-4ff0-98de-61313aaf2891" : {
+            "nodeType" : ".v1.AddColumn",
+            "columnName" : "Revenue",
+            "expression" : "[Sales Amount]*[Order Quantity]",
+            "name" : "Add Revenue",
+            "id" : "75821e76-3944-4ff0-98de-61313aaf2891",
+            "baseType" : "transform",
+            "nextNodes" : [ ],
+            "serialize" : false,
+            "description" : null
+          }
+        },
+        "connections" : { },
+        "dataConnections" : { },
+        "connectionIds" : [ ],
+        "dataConnectionIds" : [ ],
+        "nodeProperties" : { },
+        "extensibility" : null
+      },
+      "namespacesToInput" : {
+        "Default" : {
+          "nodeId" : "75821e76-3944-4ff0-98de-61313aaf2891",
+          "namespace" : "Default"
+        }
+      },
+      "namespacesToOutput" : {
+        "Default" : {
+          "nodeId" : "75821e76-3944-4ff0-98de-61313aaf2891",
+          "namespace" : "Default"
+        }
+      },
+      "providedParameters" : null
+    },
+    "d78fb081-2a58-4a32-97e8-d48505c4524c" : {
+      "nodeType" : ".v1.LoadExcel",
+      "name" : "Sales Order_data",
+      "id" : "d78fb081-2a58-4a32-97e8-d48505c4524c",
+      "baseType" : "input",
+      "nextNodes" : [ {
+        "namespace" : "Default",
+        "nextNodeId" : "aaf666c6-81aa-4491-a722-4bcfd245c726",
+        "nextNamespace" : "Default"
+      } ],
+      "serialize" : false,
+      "description" : null,
+      "connectionId" : "475fd40e-de44-45c9-b80a-2ef75b1bc543",
+      "connectionAttributes" : { },
+      "fields" : [ {
+        "name" : "Channel",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 0,
+        "isGenerated" : false
+      }, {
+        "name" : "SalesOrderLineKey",
+        "type" : "integer",
+        "collation" : null,
+        "caption" : "",
+        "ordinal" : 1,
+        "isGenerated" : false
+      }, {
+        "name" : "Sales Order",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 2,
+        "isGenerated" : false
+      }, {
+        "name" : "Sales Order Line",
+        "type" : "string",
+        "collation" : "LEN_RUS_S2",
+        "caption" : "",
+        "ordinal" : 3,
+        "isGenerated" : false
+      } ],
+      "actions" : [ ],
+      "debugModeRowLimit" : 393216,
+      "originalDataTypes" : { },
+      "randomSampling" : null,
+      "updateTimestamp" : 1743221842480,
+      "restrictedFields" : { },
+      "userRenamedFields" : { },
+      "selectedFields" : null,
+      "samplingType" : null,
+      "groupByFields" : null,
+      "filters" : [ ],
+      "relation" : {
+        "type" : "table",
+        "table" : "['Sales Order_data$']"
+      }
+    }
+  },
+  "connections" : {
+    "475fd40e-de44-45c9-b80a-2ef75b1bc543" : {
+      "connectionType" : ".v1.SqlConnection",
+      "id" : "475fd40e-de44-45c9-b80a-2ef75b1bc543",
+      "name" : "AdventureWorks Sales.xlsx",
+      "isPackaged" : false,
+      "connectionAttributes" : {
+        "filename" : "D:\\downloads\\AdventureWorks Sales.xlsx",
+        "class" : "excel-direct",
+        "directory" : "D:\\downloads"
+      }
+    }
+  },
+  "dataConnections" : { },
+  "connectionIds" : [ "475fd40e-de44-45c9-b80a-2ef75b1bc543" ],
+  "dataConnectionIds" : [ ],
+  "nodeProperties" : { },
+  "extensibility" : { },
+  "selection" : [ ],
+  "majorVersion" : 1,
+  "minorVersion" : 3,
+  "documentId" : "28e610ed-cb2f-48c5-8ba8-6031a29a5130",
+  "obfuscatorId" : "25300b30-e119-4126-a96c-ecd2c4653ede"
+}

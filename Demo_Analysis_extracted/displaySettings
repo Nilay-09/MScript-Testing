@@ -1,0 +1,287 @@
+{
+  "majorVersion" : 1,
+  "minorVersion" : 0,
+  "fieldOrder" : {
+    "fieldOrdinals" : {
+      "d78fb081-2a58-4a32-97e8-d48505c4524c-Channel" : 100,
+      "d78fb081-2a58-4a32-97e8-d48505c4524c-SalesOrderLineKey" : 200,
+      "d78fb081-2a58-4a32-97e8-d48505c4524c-Sales Order" : 300,
+      "d78fb081-2a58-4a32-97e8-d48505c4524c-Sales Order Line" : 400,
+      "d78fb081-2a58-4a32-97e8-d48505c4524c-Source Row Number" : 0,
+      "8fe429e1-bbbd-4114-a178-62802aa1f5d1-CustomerKey" : 500,
+      "8fe429e1-bbbd-4114-a178-62802aa1f5d1-Customer ID" : 600,
+      "8fe429e1-bbbd-4114-a178-62802aa1f5d1-Customer" : 700,
+      "8fe429e1-bbbd-4114-a178-62802aa1f5d1-City" : 800,
+      "8fe429e1-bbbd-4114-a178-62802aa1f5d1-State-Province" : 900,
+      "8fe429e1-bbbd-4114-a178-62802aa1f5d1-Country-Region" : 1000,
+      "8fe429e1-bbbd-4114-a178-62802aa1f5d1-Postal Code" : 1100,
+      "8fe429e1-bbbd-4114-a178-62802aa1f5d1-Source Row Number" : -100,
+      "3d4e269a-3840-4d83-b07c-d9c7f944d422-DateKey" : 1200,
+      "3d4e269a-3840-4d83-b07c-d9c7f944d422-Date" : 1300,
+      "3d4e269a-3840-4d83-b07c-d9c7f944d422-Fiscal Year" : 1400,
+      "3d4e269a-3840-4d83-b07c-d9c7f944d422-Fiscal Quarter" : 1500,
+      "3d4e269a-3840-4d83-b07c-d9c7f944d422-Month" : 1600,
+      "3d4e269a-3840-4d83-b07c-d9c7f944d422-Full Date" : 1700,
+      "3d4e269a-3840-4d83-b07c-d9c7f944d422-MonthKey" : 1800,
+      "3d4e269a-3840-4d83-b07c-d9c7f944d422-Source Row Number" : -200,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-SalesOrderLineKey" : 1900,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-ResellerKey" : 2000,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-CustomerKey" : 2100,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-ProductKey" : 2200,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-OrderDateKey" : 2300,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-DueDateKey" : 2400,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-ShipDateKey" : 2500,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-SalesTerritoryKey" : 2600,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-Order Quantity" : 2700,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-Unit Price" : 2800,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-Extended Amount" : 2900,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-Unit Price Discount Pct" : 3000,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-Product Standard Cost" : 3100,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-Total Product Cost" : 3200,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-Sales Amount" : 3300,
+      "a60b5fe7-aefa-4644-be60-0e569743877d-Source Row Number" : -300,
+      "8363f39f-4bb2-4106-a84d-68395160e494-SalesTerritoryKey" : 3400,
+      "8363f39f-4bb2-4106-a84d-68395160e494-Region" : 3500,
+      "8363f39f-4bb2-4106-a84d-68395160e494-Country" : 3600,
+      "8363f39f-4bb2-4106-a84d-68395160e494-Group" : 3700,
+      "75821e76-3944-4ff0-98de-61313aaf2891-Revenue" : -400
+    },
+    "minOrdinal" : -400,
+    "maxOrdinal" : 3700
+  },
+  "flowDisplaySettings" : {
+    "flowGroupNodeDisplay" : { },
+    "flowSelection" : {
+      "type" : "nothing",
+      "selectedNodePath" : null,
+      "selectedType" : null
+    },
+    "flowNodeDisplaySettings" : {
+      "8fe429e1-bbbd-4114-a178-62802aa1f5d1" : {
+        "color" : {
+          "hexCss" : "#86AF6A",
+          "rgba" : [ "134", "175", "106", "1" ]
+        },
+        "position" : {
+          "x" : 0,
+          "y" : 3
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "e48b125e-ff28-4134-a71f-9ba7a0028cc2" : {
+        "color" : {
+          "hexCss" : "#845578",
+          "rgba" : [ "132", "85", "120", "1" ]
+        },
+        "position" : {
+          "x" : 2,
+          "y" : 1
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "c85aa31a-0510-402d-91bd-aabf360bf30f" : {
+        "color" : {
+          "hexCss" : "#F6A035",
+          "rgba" : [ "246", "160", "53", "1" ]
+        },
+        "position" : {
+          "x" : 1,
+          "y" : 1
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "875b14e1-bcc1-48c7-9073-56baa342fdad" : {
+        "color" : {
+          "hexCss" : "#EFC637",
+          "rgba" : [ "239", "198", "55", "1" ]
+        },
+        "position" : {
+          "x" : 5,
+          "y" : 1
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "9fe94855-9e0d-4232-afac-4e1a9df900af" : {
+        "color" : {
+          "hexCss" : "#8BC2CA",
+          "rgba" : [ "139", "194", "202", "1" ]
+        },
+        "position" : {
+          "x" : 1,
+          "y" : 2
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "9c3b6d4a-6fa6-4e5c-8c40-31011ebf9d22" : {
+        "color" : {
+          "hexCss" : "#86AF6A",
+          "rgba" : [ "134", "175", "106", "1" ]
+        },
+        "position" : {
+          "x" : 1,
+          "y" : 3
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "a5f9dd71-a007-4129-92a0-abc54278c74c" : {
+        "color" : {
+          "hexCss" : "#86AF6A",
+          "rgba" : [ "134", "175", "106", "1" ]
+        },
+        "position" : {
+          "x" : 2,
+          "y" : 3
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "457ef826-e82f-4fb0-b6f6-b101e978a0b8" : {
+        "color" : {
+          "hexCss" : "#EFC637",
+          "rgba" : [ "239", "198", "55", "1" ]
+        },
+        "position" : {
+          "x" : 3,
+          "y" : 1
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "3d4e269a-3840-4d83-b07c-d9c7f944d422" : {
+        "color" : {
+          "hexCss" : "#CD677F",
+          "rgba" : [ "205", "103", "127", "1" ]
+        },
+        "position" : {
+          "x" : 0,
+          "y" : 4
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "b7626c3a-f9ce-4b7a-a898-327b063b7eb0" : {
+        "color" : {
+          "hexCss" : "#CD677F",
+          "rgba" : [ "205", "103", "127", "1" ]
+        },
+        "position" : {
+          "x" : 2,
+          "y" : 4
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "aaf666c6-81aa-4491-a722-4bcfd245c726" : {
+        "color" : {
+          "hexCss" : "#3D7FA6",
+          "rgba" : [ "61", "127", "166", "1" ]
+        },
+        "position" : {
+          "x" : 2,
+          "y" : 0
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "d65615dd-af5e-4a37-9260-93fd48281ea0" : {
+        "color" : {
+          "hexCss" : "#CD677F",
+          "rgba" : [ "205", "103", "127", "1" ]
+        },
+        "position" : {
+          "x" : 1,
+          "y" : 4
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "8363f39f-4bb2-4106-a84d-68395160e494" : {
+        "color" : {
+          "hexCss" : "#F6A035",
+          "rgba" : [ "246", "160", "53", "1" ]
+        },
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "a60b5fe7-aefa-4644-be60-0e569743877d" : {
+        "color" : {
+          "hexCss" : "#8BC2CA",
+          "rgba" : [ "139", "194", "202", "1" ]
+        },
+        "position" : {
+          "x" : 0,
+          "y" : 2
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "6e893db9-8262-4e58-aa02-5d87a92b6991" : {
+        "color" : {
+          "hexCss" : "#EFC637",
+          "rgba" : [ "239", "198", "55", "1" ]
+        },
+        "position" : {
+          "x" : 4,
+          "y" : 1
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      },
+      "d78fb081-2a58-4a32-97e8-d48505c4524c" : {
+        "color" : {
+          "hexCss" : "#3D7FA6",
+          "rgba" : [ "61", "127", "166", "1" ]
+        },
+        "position" : {
+          "x" : 1,
+          "y" : 0
+        },
+        "size" : {
+          "width" : 1,
+          "height" : 1
+        }
+      }
+    }
+  },
+  "hiddenColumns" : [ ]
+}
