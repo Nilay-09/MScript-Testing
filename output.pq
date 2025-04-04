@@ -68,9 +68,9 @@ Clean_5 = Sales_Order_data,
 // Container: Clean_2
 Clean_2 = Date_data,
 Join_1 = Table.Join(
-    Clean_4,
-    {"SalesTerritoryKey"},
     Clean_1,
+    {"SalesTerritoryKey"},
+    Clean_4,
     {"SalesTerritoryKey"},
     JoinKind.Inner
 ),
@@ -86,7 +86,7 @@ Add_Revenue = Table.AddColumn(
     Join_3,
     "Revenue",
     each [Sales Amount]*[Order Quantity],
-    type any
+    Int64.Type
 ),
 Clean_6 = Add_Revenue,
 
